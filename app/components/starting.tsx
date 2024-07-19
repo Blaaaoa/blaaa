@@ -1,7 +1,8 @@
-'use client'
+'use client';
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation';
+import Know from './know'
 
 const main = () => {
   return (
@@ -10,26 +11,27 @@ const main = () => {
         <div className='col-span-7 place-self-center'>
           <div className='ml-0'>
             <h1 className='text-white mb-10 mt-10 lg:text-6xl font-extrabold'>
-              Hello,I'm
+            Hello, I&apos;m
             </h1>
             <h2>
               <TypeAnimation
-              sequence={[
-                
-                'Augusto Varghese',
-               
-                'Human',
-                1000,
-                'friewnd',
-                1000,
-                'software eng',
-                1000
-              ]}
-              wrapper="span"
-              speed={50}
-              style={{ fontSize: '2em', display: 'inline-block' }}
-              repeat={Infinity}
-            /></h2>
+                sequence={[
+
+                  'Augusto Varghese',
+                  2000,
+
+                  'Human',
+                  1000,
+                  'friewnd',
+                  1000,
+                  'software eng',
+                  1000
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ fontSize: '2em', display: 'inline-block' }}
+                repeat={Infinity}
+              /></h2>
 
           </div>
 
@@ -54,7 +56,14 @@ const main = () => {
           <button className='px-10 py-3 rounded-full bg-white text-black'>KnowMe</button>
         </div>
         <div className='ml-100 mt-10'>
-          <button className='px-10 py-3 rounded-full ml-10 bg-white text-black'>DownladCV </button>
+          <button
+            onClick={Know}
+            className='px-10 py-3 rounded-full ml-10 bg-white text-black'
+            type='button'
+          >
+
+            DownladCV
+          </button>
         </div>
 
       </div>
