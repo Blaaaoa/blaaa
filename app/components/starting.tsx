@@ -8,9 +8,9 @@ const main = () => {
   return (
     <section>
       <div className='grid grid-cols-1 lg:grid-cols-12 ml-20 mt-20' >
-        <div className='col-span-7 place-self-center'>
-          <div className='ml-0'>
-            <h1 className='text-white mb-10 mt-10 lg:text-6xl font-extrabold'>
+        <div className='col-span-7 '>
+          <div className='ml-0 mx-auto '>
+            <h1 className=' mb-10 mt-10 lg:text-6xl font-extrabold  bg-gradient-to-r from-indigo-400 to-red-600 inline-block text-transparent bg-clip-text'>
             Hello, I&apos;m
             </h1>
             <h2>
@@ -58,7 +58,7 @@ const main = () => {
         <div className='ml-100 mt-10'>
           <button
             onClick={Know}
-            className='px-10 py-3 rounded-full ml-10 bg-white text-black'
+            className='px-10  py-3 rounded-full ml-20 bg-white text-black'
             type='button'
           >
 
